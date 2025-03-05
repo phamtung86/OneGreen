@@ -41,6 +41,7 @@ Dự án **ReactJS** xây dựng website tương tự: [One Green Test](https://
 ✔️ Responsive, tối ưu giao diện người dùng  
 ✔️ Gọi API bằng **Axios**  
 ✔️ Cấu trúc code rõ ràng, dễ mở rộng  
+Dưới đây là giao diện demo của trang web
 ![Giao diện trang web](https://res.cloudinary.com/dspqk9rl9/image/upload/v1741165292/Giao_dien-demo_p9zusz.png)
 
 
