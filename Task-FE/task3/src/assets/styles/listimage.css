@@ -1,0 +1,17 @@
+.list-images{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 10px;
+}
+@media screen and (max-width: 320px) {
+    .list-images{
+        display: flex;
+        flex-direction: column;
+    }
+}

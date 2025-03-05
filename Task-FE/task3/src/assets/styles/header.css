@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #09192f;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+.header-logo{
+    height: 90%;
+}
+.header-title-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+}
+.header-title{
+   
+    font-size: 25px;
+    font-weight: 650;
+}
+.contact-click{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6ee7b7;
+}
+.header-menu{
+    display: flex;
+    gap: 20px;
+    
+}
+.menu-item{
+    color: #6ee7b7;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .header{
+        display: none;
+    }
+}
