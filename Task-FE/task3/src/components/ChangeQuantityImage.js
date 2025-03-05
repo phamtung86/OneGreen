@@ -3,7 +3,7 @@ import "../assets/styles/changequantityimage.css";
 
 const ChangeQuantityImage = ({ fetchData, resetData }) => {
     const [count, setCount] = useState(1);
-
+    
     return (
         <div className="change-quantity">
             <div className="change-quantity-form">
