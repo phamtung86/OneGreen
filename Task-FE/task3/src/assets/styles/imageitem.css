@@ -15,6 +15,11 @@
     height: 80%;
     width: 90%;
 }
+
+.image-item.selected {
+    border: 2px solid red;
+}
+
 @media screen and (max-width: 320px) {
     .image-item{
         display: flex;

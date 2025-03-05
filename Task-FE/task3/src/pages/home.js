@@ -6,6 +6,7 @@ import Api from "../services/Api";
 const Home = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [selectedImages, setSelectedImages] = useState([]);
 
     const fetchData = async (quantity) => {
         try {
@@ -13,7 +14,7 @@ const Home = () => {
             const response = await Api.getImagesByCount(quantity);
 
             if (response.status === "success") {
-                setData((prevData) => [...prevData, ...response.message]); // Giữ dữ liệu cũ
+                setData((prevData) => [...prevData, ...response.message]); 
             } else {
                 console.error("Lỗi: API không trả về status success");
             }
@@ -31,9 +32,23 @@ const Home = () => {
 
     return (
         <div>
-            <ChangeQuantityImage fetchData={fetchData} resetData={resetData} />
-
-            {loading ? <p>⏳ Đang tải hình ảnh...</p> : <ListImage data={data} />}
+            <ChangeQuantityImage 
+                fetchData={fetchData} 
+                resetData={resetData} 
+                data={data} 
+                setData={setData} 
+                selectedImages={selectedImages} 
+                setSelectedImages={setSelectedImages} 
+            />
+            {loading ? (
+                <p>⏳ Đang tải hình ảnh...</p>
+            ) : (
+                <ListImage 
+                    data={data} 
+                    setSelectedImages={setSelectedImages} 
+                    selectedImages={selectedImages} 
+                />
+            )}
         </div>
     );
 };

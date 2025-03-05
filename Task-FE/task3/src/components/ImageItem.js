@@ -1,9 +1,14 @@
-import '../assets/styles/imageitem.css'
-const ImageItem = ({item, index}) => {
+import '../assets/styles/imageitem.css';
+
+const ImageItem = ({ item, index, onClick, isSelected }) => {
     return (
-        <div className="image-item">
-           <img className="image-dog" key={index} src={item} alt={item} />
+        <div 
+            className={`image-item ${isSelected ? 'selected' : ''}`} 
+            onClick={onClick}
+        >
+            <img src={item} className="image-dog" alt={`image-dog ${index}`} />
         </div>
-    )
-}
+    );
+};
+
 export default ImageItem;
