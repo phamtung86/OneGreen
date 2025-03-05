@@ -1,7 +1,3 @@
-Dưới đây là file `README.md` hoàn chỉnh để đáp lại bài test **Frontend Intern Hiring Test**:  
-
----
-
 # 📝 Frontend Intern Hiring Test - Submission  
 
 ## 🚀 Giới thiệu  
